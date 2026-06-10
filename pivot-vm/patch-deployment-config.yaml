@@ -1,0 +1,21 @@
+description: "Weekly Sunday morning patching at 06:00 UTC for pivot-trading-vm"
+
+instanceFilter:
+  instances:
+    - "zones/europe-west1-b/instances/pivot-trading-vm"
+
+patchConfig:
+  rebootConfig: DEFAULT
+
+recurringSchedule:
+  timeZone:
+    id: "UTC"
+  timeOfDay:
+    hours: 6
+    minutes: 0
+  frequency: WEEKLY
+  weekly:
+    dayOfWeek: SUNDAY
+  startTime: "2026-03-22T06:00:00Z"
+
+duration: "7200s"

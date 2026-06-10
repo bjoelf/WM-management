@@ -1,0 +1,7 @@
+
+Configure DNS - Add A record: newrunner.pipsnticks.se → 34.79.13.81
+
+Once DNS is ready, obtain SSL certificate:
+
+
+gcloud compute ssh pivot-trading-vm --zone=europe-west1-b --command="sudo certbot --nginx -d newrunner.pipsnticks.se"
